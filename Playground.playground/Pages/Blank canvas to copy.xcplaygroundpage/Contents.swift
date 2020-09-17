@@ -16,8 +16,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 300
-let preferredHeight = 600
+let preferredWidth = 600
+let preferredHeight = 800
 /*:
  ## Required code
  
@@ -44,9 +44,30 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+// Colours
+var lightGray = Color(hue: 0, saturation: 100, brightness: 0, alpha: 37)
+var lighterGray = Color(hue: 0, saturation: 100, brightness: 0, alpha: 16)
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+
+// Region 1
+canvas.fillColor = lightGray
+var region1: [Point] = []
+region1.append(Point(x: 300, y: 30))
+region1.append(Point(x: 370, y: 50))
+region1.append(Point(x: 300, y: 115))
+region1.append(Point(x: 230, y: 50))
+region1.append(Point(x: 300, y: 30))
+canvas.drawCustomShape(with: region1)
+
+// Region 2
+canvas.fillColor = lighterGray
+var region2: [Point] = []
+region2.append(Point(x: 230, y: 50))
+region2.append(Point(x: 70, y: 205))
+region2.append(Point(x: 150, y: 280 ))
+region2.append(Point(x: 230, y: 50))
+canvas.drawCustomShape(with: region2)
+
 
 /*:
  ## Show the Assistant Editor
