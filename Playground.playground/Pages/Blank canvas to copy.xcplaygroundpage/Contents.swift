@@ -68,19 +68,53 @@ region2.append(Point(x: 150, y: 280 ))
 region2.append(Point(x: 230, y: 50))
 canvas.drawCustomShape(with: region2)
 
+// Region 3
+canvas.fillColor = lighterGray
+var region3: [Point] = []
+region3.append(Point(x: 370, y: 50))
+region3.append(Point(x: 530, y: 205))
+region3.append(Point(x: 450, y: 280 ))
+region3.append(Point(x: 370, y: 50))
+canvas.drawCustomShape(with: region3)
 
-/*:
- ## Show the Assistant Editor
- Don't see any results?
- 
- Remember to show the Assistant Editor (1), and then switch to Live View (2):
- 
- ![timeline](timeline.png "Timeline")
+// Region 4
+canvas.fillColor = lighterGray
+var region4: [Point] = []
+region4.append(Point(x: 230, y: 50))
+region4.append(Point(x: 150, y: 280))
+region4.append(Point(x: 210, y: 390))
+region4.append(Point(x: 240, y: 190))
+region4.append(Point(x: 300, y: 115))
+region4.append(Point(x: 230, y: 50))
+canvas.drawCustomShape(with: region4)
 
- ## Use source control
- To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
- 
- Please commit and push your work often.
- 
- ![source_control](source-control.png "Source Control")
- */
+// Region 5
+canvas.fillColor = lighterGray
+var region5: [Point] = []
+region5.append(Point(x: 370, y: 50))
+region5.append(Point(x: 450, y: 280))
+region5.append(Point(x: 390, y: 390))
+region5.append(Point(x: 360, y: 190))
+region5.append(Point(x: 300, y: 115))
+region5.append(Point(x: 370, y: 50))
+canvas.drawCustomShape(with: region5)
+
+canvas.drawAxes(withScale: true)
+
+// Region 6
+canvas.fillColor = lightGray
+var region6: [Point] = []
+region6.append(Point(x: 70, y: 205))
+region6.append(Point(x: 67, y: 375))
+region6.append(Point(x: 150, y: 280 ))
+region6.append(Point(x: 70, y: 205))
+canvas.drawCustomShape(with: region6)
+
+// Region 7
+canvas.fillColor = lightGray
+var region7: [Point] = []
+region7.append(Point(x: 530, y: 205))
+region7.append(Point(x: 526, y: 375))
+region7.append(Point(x: 450, y: 280 ))
+region7.append(Point(x: 530, y: 205))
+canvas.drawCustomShape(with: region7)

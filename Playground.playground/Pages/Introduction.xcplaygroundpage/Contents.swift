@@ -69,8 +69,7 @@ canvas.drawLine(from: Point(x: 0, y: 3 * 50), to: Point(x: 3 * 50, y: 8 * 50))
 canvas.drawLine(from: Point(x: 0, y: 2 * 50), to: Point(x: 2 * 50, y: 8 * 50))
 canvas.drawLine(from: Point(x: 0, y: 1 * 50), to: Point(x: 1 * 50, y: 8 * 50))
 
-canvas.drawLine(from: Point(x: 0, y: 400), to: Point(x: 400, y: 0))
-canvas.drawLine(from: Point(x: 400, y: 400), to: Point(x: 400, y: 400))
+
 /*:
  ## Show the Assistant Editor
  Don't see any results?
