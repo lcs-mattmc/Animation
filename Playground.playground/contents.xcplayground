@@ -4,5 +4,8 @@
         <page name='Introduction'/>
         <page name='Tortoise Examples'/>
         <page name='Blank canvas to copy'/>
+        <page name='Grid Decision by 4'/>
+        <page name='Grid Decision by 2'/>
+        <page name='cahoss'/>
     </pages>
 </playground>

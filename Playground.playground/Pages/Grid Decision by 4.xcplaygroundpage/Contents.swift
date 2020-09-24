@@ -46,7 +46,9 @@ PlaygroundPage.current.liveView = canvas
  */
 // Colours
 // draw the axes with a scale
-canvas.drawAxes(withScale: true, by: 50)
+canvas.drawAxes(withScale: true, by: 25)
+
+canvas.defaultLineWidth=5
 
  // draw a line of circles
 for y in stride(from: 0, to: 500, by: 50) {
@@ -57,18 +59,19 @@ for y in stride(from: 0, to: 500, by: 50) {
        
 
 // make a ramdom number that will be 1 or 2
-        let dicisionmaker = Int.random(in:1...2)
+        let dicisionmaker = Int.random(in:1...4)
         
         //now draw a line one way or the other...
         if dicisionmaker == 1 {
             // draw a
             canvas.drawLine(from: Point(x: x, y: y),
                             to: Point(x: x + 50, y: y + 50))
+        } else if dicisionmaker == 2 {
+            
+        } else if dicisionmaker == 3 {
+            
         } else {
             
-                // draw a
-                canvas.drawLine(from: Point(x: x, y: y + 50),
-                                to: Point(x: x + 50, y: y))
         }
     
     
