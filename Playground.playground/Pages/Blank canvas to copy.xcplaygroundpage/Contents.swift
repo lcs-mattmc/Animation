@@ -120,7 +120,7 @@ region7.append(Point(x: 530, y: 205))
 canvas.drawCustomShape(with: region7)
 
 // Region 8
-canvas.fillColor = lightGray
+canvas.fillColor = lighterGray
 var region8: [Point] = []
 region8.append(Point(x: 150, y: 280))
 region8.append(Point(x: 67, y: 375))
@@ -138,10 +138,29 @@ region9.append(Point(x: 150, y: 280))
 canvas.drawCustomShape(with: region9)
 
 // Region 10
-canvas.fillColor = lightGray
+canvas.fillColor = lighterGray
 var region10: [Point] = []
 region10.append(Point(x: 450, y: 280))
 region10.append(Point(x: 525, y: 375))
 region10.append(Point(x: 495, y: 495 ))
 region10.append(Point(x: 450, y: 280))
 canvas.drawCustomShape(with: region10)
+
+// Region 11
+canvas.fillColor = lightGray
+var region11: [Point] = []
+region11.append(Point(x: 450, y: 280))
+region11.append(Point(x: 390, y: 390))
+region11.append(Point(x: 495, y: 495 ))
+region11.append(Point(x: 450, y: 280))
+canvas.drawCustomShape(with: region11)
+
+// Region 12
+canvas.fillColor = lightGray
+var region12: [Point] = []
+region12.append(Point(x: 240, y: 185))
+region12.append(Point(x: 250, y: 240 ))
+region12.append(Point(x: 300, y: 230 ))
+region12.append(Point(x: 350, y: 240))
+region12.append(Point(x: 360, y: 185))
+canvas.drawCustomShape(with: region12)
