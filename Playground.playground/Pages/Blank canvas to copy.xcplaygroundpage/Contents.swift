@@ -30,7 +30,7 @@ import PlaygroundSupport
 import CanvasGraphics
 
 // Create canvas
-let canvas = Canvas(width: preferredWidth, height: preferredHeight)
+let canvas = Canvas(width: preferredWidth, height: preferredHeight, quality: .Ultra)
 
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
@@ -48,6 +48,9 @@ PlaygroundPage.current.liveView = canvas
 var lightGray = Color(hue: 0, saturation: 100, brightness: 0, alpha: 37)
 var lighterGray = Color(hue: 0, saturation: 100, brightness: 0, alpha: 16)
 
+
+// Make borders thick
+canvas.defaultBorderWidth = 3
 
 // Region 1
 canvas.fillColor = lightGray
@@ -99,7 +102,7 @@ region5.append(Point(x: 300, y: 115))
 region5.append(Point(x: 370, y: 50))
 canvas.drawCustomShape(with: region5)
 
-canvas.drawAxes(withScale: true)
+//canvas.drawAxes(withScale: true)
 
 // Region 6
 canvas.fillColor = lightGray
@@ -300,3 +303,5 @@ region27.append(Point(x: 530, y: 620))
 region27.append(Point(x: 530, y: 620 ))
 region27.append(Point(x: 495, y: 620))
 canvas.drawCustomShape(with: region27)
+
+canvas.copyToClipboard()
