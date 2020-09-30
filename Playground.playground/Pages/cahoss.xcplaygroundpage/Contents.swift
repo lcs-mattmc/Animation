@@ -16,8 +16,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 500
-let preferredHeight = 500
+let preferredWidth = 400
+let preferredHeight = 600
 /*:
  ## Required code
  
@@ -44,42 +44,38 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
-// Colours
-// draw the axes with a scale
-canvas.drawAxes(withScale: true, by: 25)
 
-canvas.defaultLineWidth=5
+// coulor canstants
+let offwhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
+let limegreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 
- // draw a line of circles
-for y in stride(from: 0, to: 500, by: 50) {
+// turn off borders
+canvas.drawShapesWithBorders = false
 
-    for x in stride(from: 0, to: 500, by: 50) {
-        x
-        y
-       
+// greeen backgrond
+canvas.fillColor = limegreen
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
-// make a ramdom number that will be 1 or 2
-        let dicisionmaker = Int.random(in:1...4)
-        
-        //now draw a line one way or the other...
-        if dicisionmaker == 1 {
-            // draw a
-            canvas.drawLine(from: Point(x: x, y: y),
-                            to: Point(x: x + 50, y: y + 50))
-        } else if dicisionmaker == 2 {
-            
-        } else if dicisionmaker == 3 {
-            
+// black background for bottom part
+canvas.fillColor = Color.black
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 400)
+
+// draw all the circles
+
+canvas.fillColor = limegreen
+for y in stride(from: 0, through: 400, by: 40) {
+    for x in stride(from: 0, through: 400, by: 40) {
+
+        // fill colour
+        if x + y > 400 {
+            canvas.fillColor = limegreen
         } else {
-            
+            canvas.fillColor = offwhite
         }
-    
-    
-    
-    
+        
+        // draw circle
+        canvas.drawEllipse(at: Point(x: x, y: y), width: 35, height: 35)
+        
+        
     }
-    
 }
-
-
-canvas.copyToClipboard()
