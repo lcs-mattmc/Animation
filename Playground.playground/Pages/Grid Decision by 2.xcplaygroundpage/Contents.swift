@@ -44,41 +44,4 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
-// Colours
-// draw the axes with a scale
-canvas.drawAxes(withScale: true, by: 25)
 
-canvas.defaultLineWidth=5
-
- // draw a line of circles
-for y in stride(from: 0, to: 500, by: 50) {
-
-    for x in stride(from: 0, to: 500, by: 50) {
-        x
-        y
-       
-
-// make a ramdom number that will be 1 or 2
-        let dicisionmaker = Int.random(in:1...2)
-        
-        //now draw a line one way or the other...
-        if dicisionmaker == 1 {
-            // draw a
-            canvas.drawLine(from: Point(x: x, y: y),
-                            to: Point(x: x + 50, y: y + 50))
-        } else {
-            
-                // draw a
-                canvas.drawLine(from: Point(x: x, y: y + 50),
-                                to: Point(x: x + 50, y: y))
-        }
-    
-    
-    
-    
-    }
-    
-}
-
-
-canvas.copyToClipboard()
