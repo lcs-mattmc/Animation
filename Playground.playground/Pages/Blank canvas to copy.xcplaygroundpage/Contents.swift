@@ -30,8 +30,7 @@ import PlaygroundSupport
 import CanvasGraphics
 
 // Create canvas
-let canvas = Canvas(width: preferredWidth, height: preferredHeight, quality: .Ultra)
-
+let canvas=Canvas (width: preferredWidth, height: preferredHeight)
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
 /*:
@@ -51,6 +50,7 @@ var lighterGray = Color(hue: 0, saturation: 100, brightness: 0, alpha: 16)
 
 // Make borders thick
 canvas.defaultBorderWidth = 3
+
 
 // Region 1
 canvas.fillColor = lightGray
