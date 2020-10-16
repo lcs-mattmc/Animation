@@ -68,5 +68,5 @@ canvas.drawText(message: "superdrag", at: Point(x: 50, y: 50), size: 20, kerning
 
 
 for y in stride(from: 50, through: 400, by: 25) {
-    canvas.drawLine(from: Point(x: 300, y: 50), to: Point(x: 400, y: 150))
+    canvas.drawLine(from: Point(x: 300, y: y), to: Point(x: 400, y: y + 100))
 }
