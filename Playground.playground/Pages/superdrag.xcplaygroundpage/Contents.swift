@@ -66,12 +66,19 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 canvas.drawText(message: "superdrag", at: Point(x: 50, y: 50), size: 20, kerning: 1)
 
+canvas.defaultBorderWidth = 10
+
 // draw cicles paddurn
 canvas.drawShapesWithFill = false
-for y in stride(from: 50, through: 400, by: 25) {
+for y in stride(from: 50, through: 400, by: 40) {
     canvas.drawEllipse(at: Point(x: 200, y: 400), width: y, height: y)
+    canvas.defaultLineWidth = 12 }
+
+// draw cicles paddurn
+canvas.drawShapesWithFill = false
+for y in stride(from: 50, through: 400, by: 40) {
+    canvas.drawEllipse(at: Point(x: 200, y: 400), width: y, height: y)
+    canvas.defaultLineWidth = 12 }
 
 
-//for y in stride(from: 50, through: 400, by: 25) {
-//    canvas.drawLine(from: Point(x: 300, y: y), to: Point(x: 400, y: y + 100))
-}
+

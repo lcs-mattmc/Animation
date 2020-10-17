@@ -49,7 +49,7 @@ var lighterGray = Color(hue: 0, saturation: 100, brightness: 0, alpha: 16)
 
 
 // Make borders thick
-canvas.defaultBorderWidth = 3
+canvas.defaultBorderWidth = 5
 
 
 // Region 1
