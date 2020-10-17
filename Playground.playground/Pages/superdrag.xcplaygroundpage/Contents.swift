@@ -64,21 +64,30 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 canvas.fillColor = lightBlue
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
-canvas.drawText(message: "superdrag", at: Point(x: 50, y: 50), size: 20, kerning: 1)
+canvas.drawText(message: "superdrag", at: Point(x: 50, y: 50), size: 28, kerning: 1)
 
 canvas.defaultBorderWidth = 10
 
+
+canvas.borderColor = offWhite
 // draw cicles paddurn
 canvas.drawShapesWithFill = false
 for y in stride(from: 50, through: 400, by: 40) {
-    canvas.drawEllipse(at: Point(x: 200, y: 400), width: y, height: y)
-    canvas.defaultLineWidth = 12 }
+    canvas.drawEllipse(at: Point(x: 200, y: 500), width: y, height: y)
+    canvas.defaultLineWidth = 12
+    
+}
 
 // draw cicles paddurn
+canvas.borderColor = translucentPink
 canvas.drawShapesWithFill = false
 for y in stride(from: 50, through: 400, by: 40) {
     canvas.drawEllipse(at: Point(x: 200, y: 400), width: y, height: y)
-    canvas.defaultLineWidth = 12 }
+    canvas.defaultLineWidth = 12
+    
+}
 
-
+// draw axes
+canvas.defaultLineWidth = 3
+canvas.drawAxes(withScale: true, by: 50)
 
