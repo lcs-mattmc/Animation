@@ -45,3 +45,12 @@ PlaygroundPage.current.liveView = canvas
 
  */
 
+// Region 1
+canvas.fillColor = lightGray
+var region1: [Point] = []
+region1.append(Point(x: 0, y: 0))
+region1.append(Point(x: 0, y: 65))
+region1.append(Point(x: 20, y: 65))
+region1.append(Point(x: 56, y: 50))
+region1.append(Point(x: 300, y: 30))
+canvas.drawCustomShape(with: region1)

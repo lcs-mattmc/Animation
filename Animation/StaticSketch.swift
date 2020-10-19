@@ -1,50 +1,51 @@
+// EmptySketch.swift
+// Animation
 //
-//  StaticSketch.swift
-//  Animation
-//
-//  Created by Russell Gordon on 2020-06-08.
-//  Copyright © 2020 Russell Gordon. All rights reserved.
-//
+// Created by Russell Gordon on 2020-06-08.
+// Copyright © 2020 Russell Gordon. All rights reserved.
 
 import Foundation
 import CanvasGraphics
 
-// NOTE: This sketch only draws in the init() function, so it is static.
-class StaticSketch: NSObject, Sketchable {
-    
-    // NOTE: Every sketch must contain an object of type Canvas named 'canvas'
-    //       Therefore, the line immediately below must always be present.
-    var canvas: Canvas
-    
-    // This function runs once
-    override init() {
-        
-        // Create canvas object – specify size
-        canvas = Canvas(width: 300, height: 600)
-        
-        // Draw a face
-        canvas.fillColor = .white
-        canvas.defaultBorderWidth = 5
-        canvas.drawEllipse(at: Point(x: 150, y: 300), width: 200, height: 200)
+// NOTE: This is a completely empty sketch; it can be used as a template.
+class MovingSquare: NSObject, Sketchable {
 
-        // Draw eyes
-        canvas.drawEllipse(at: Point(x: 125, y: 325), width: 10, height: 20)
-        canvas.drawEllipse(at: Point(x: 175, y: 325), width: 10, height: 20)
+// NOTE: Every sketch must contain an object of type Canvas named 'canvas'
+// Therefore, the line immediately below must always be present.
+var canvas: Canvas
 
-        // Draw mouth
-        canvas.drawEllipse(at: Point(x: 150, y: 270), width: 100, height: 30)
+//vertical position
+var y = 500
+var x = 500
+var size1 = Int.random(in: 0...100)
+var size2 = Int.random(in: 0...100)
+// This function runs once
+override init() {
 
-        // Turn mouth into a smile by covering up top half of mouth
-        canvas.drawShapesWithBorders = false
-        canvas.drawRectangle(at: Point(x: 150, y: 275), width: 125, height: 25, anchoredBy: .centre)
-                
-    }
-    
-    // This function runs repeatedly, forever, to create the animated effect
-    func draw() {
-        
-        
-    }
-    
+// Create canvas object – specify size
+canvas = Canvas(width: 1000, height: 1000)
+
 }
+
+// This function runs repeatedly, forever, to create the animated effect
+func draw() {
+
+//change vertical position
+let y = Int.random(in:0...1000)
+let x = Int.random(in:0...1000)
+let colour = Int.random(in: 0...360)
+canvas.fillColor = Color(hue: colour, saturation: 100, brightness: 100, alpha: 50)
+
+// change size of square
+size1 = Int.random(in: 50...100)
+size2 = Int.random(in: 50...100)
+
+//draw square in middle of canvas
+canvas.drawRectangle(at: Point(x: x, y: y), width: size1, height: size2,anchoredBy: .centre)
+canvas.drawEllipse(at: Point(x: y, y: x), width: size2, height: size1)
+}
+
+}
+
+
 
