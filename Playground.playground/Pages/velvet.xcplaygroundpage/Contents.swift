@@ -16,8 +16,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 500
-let preferredHeight = 500
+let preferredWidth = 200
+let preferredHeight = 200
 /*:
  ## Required code
  
@@ -45,12 +45,23 @@ PlaygroundPage.current.liveView = canvas
 
  */
 
+// COLORS
+let black = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+let purple = Color(hue: 309, saturation: 78, brightness: 64, alpha: 100)
+let offWhite = Color(hue: 83, saturation: 4, brightness: 89, alpha: 100)
+
+
 // Region 1
-canvas.fillColor = lightGray
+canvas.fillColor = purple
 var region1: [Point] = []
-region1.append(Point(x: 0, y: 0))
-region1.append(Point(x: 0, y: 65))
-region1.append(Point(x: 20, y: 65))
-region1.append(Point(x: 56, y: 50))
-region1.append(Point(x: 300, y: 30))
+region1.append(Point(x: 50, y: 0))
+region1.append(Point(x: 50, y: 10))
+region1.append(Point(x: 40, y: 10))
+region1.append(Point(x: 40, y: 60))
+region1.append(Point(x: 30, y: 60))
+region1.append(Point(x: 25, y: 55))
+region1.append(Point(x: 30, y: 50))
+region1.append(Point(x: 30, y: 10))
+region1.append(Point(x: 20, y: 10))
+region1.append(Point(x: 20, y: 0))
 canvas.drawCustomShape(with: region1)
