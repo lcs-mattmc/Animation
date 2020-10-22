@@ -19,6 +19,7 @@ class FiveCircles: NSObject, Sketchable {
     // control of cirlce position
     var x = 250
     var x1 = 250
+
     
     // This function runs once
     override init() {
@@ -37,10 +38,11 @@ class FiveCircles: NSObject, Sketchable {
     func draw() {
         
         x += 1
-        
+        canvas.fillColor = Color.purple
         canvas.drawEllipse(at: Point(x: x, y: 450), width: 50, height: 50)
         
         x1 -= 1
+        canvas.fillColor = Color.orange
         canvas.drawEllipse(at: Point(x: x1, y: 350), width: 50, height: 50)
         
         
