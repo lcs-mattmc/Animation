@@ -17,6 +17,7 @@ class BasicSketch: NSObject, Sketchable {
     
     // Position of circle
     var x: Int
+    var y: Int
     
     // This function runs once
     override init() {
@@ -26,6 +27,10 @@ class BasicSketch: NSObject, Sketchable {
         
         // Set starting position
         x = 250
+        y = 50
+        
+        // Slow
+        canvas.framesPerSecond = 24
         
     }
     
@@ -33,10 +38,12 @@ class BasicSketch: NSObject, Sketchable {
     func draw() {
         
         // Change position
-        x += 1
+        x -= 1
+       
+        y += 12
         
         // Draw an ellipse in the middle of the canvas
-        canvas.drawEllipse(at: Point(x: x, y: 250), width: 50, height: 50)
+        canvas.drawEllipse(at: Point(x: x, y: y), width: 50, height: 50)
         
     }
     

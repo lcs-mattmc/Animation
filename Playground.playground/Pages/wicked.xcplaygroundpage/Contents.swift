@@ -1,5 +1,5 @@
-let preferredWidth = 200
-let preferredHeight = 200
+let preferredWidth = 500
+let preferredHeight = 500
 /*:
  ## Required code
  
@@ -32,5 +32,3 @@ let black = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
 let purple = Color(hue: 309, saturation: 78, brightness: 64, alpha: 100)
 let offWhite = Color(hue: 83, saturation: 4, brightness: 89, alpha: 100)
 
-
-    { canvas.draw}
