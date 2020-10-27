@@ -19,7 +19,7 @@ class FiveCircles: NSObject, Sketchable {
     // control of cirlce position
     var x = 250
     var x1 = 250
-
+ 
     
     // This function runs once
     override init() {

@@ -1,12 +1,6 @@
-let preferredWidth = 500
-let preferredHeight = 500
-/*:
- ## Required code
- 
- Lines 28 to 36 are required to make the playground run.
- 
- Please do not remove.
- */
+//required code
+let preferredWidth = 300
+let preferredHeight = 300
 import Cocoa
 import PlaygroundSupport
 import CanvasGraphics
@@ -16,19 +10,29 @@ let canvas = Canvas(width: preferredWidth, height: preferredHeight)
 
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
-/*:
- ## Add your code
- 
- Beginning on line 48, write a meaningful comment.
- 
- You can remove the code on line 49 and begin writing your own code.
- 
- [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
+//required code end
+canvas.defaultLineWidth = 5
 
- */
+//loop 1a vertical lines)
+for loop1a in stride(from: 0, through: 300, by: 100){
+    loop1a
+    canvas.drawLine(from: Point(x: 0, y: loop1a), to: Point(x: 0, y: 50 + loop1a))
+}
 
-// COLORS
-let black = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
-let purple = Color(hue: 309, saturation: 78, brightness: 64, alpha: 100)
-let offWhite = Color(hue: 83, saturation: 4, brightness: 89, alpha: 100)
+//loop 1b vertical lines)
+for loop1b in stride(from: 0, through: 300, by: 50){
+    loop1b
+    canvas.drawLine(from: Point(x: 10, y: 25 + loop1b), to: Point(x: 10, y: loop1b))
+}
 
+////loop 2a
+//for loop2a in stride(from: 0, through: 300, by: 100){
+//    loop2a
+//    canvas.drawLine(from: Point(x: loop2a, y: 0), to: Point(x: 50 + loop2a, y: 0))
+//}
+//
+////loop 2a
+//for loop2b in stride(from: 0, through: 300, by: 100){
+//    loop2b
+//    canvas.drawLine(from: Point(x: loop2b, y: 0), to: Point(x: 50 + loop2b, y: 0))
+//}
