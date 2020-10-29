@@ -25,12 +25,14 @@ canvas.drawRectangle(at:Point(x: 0, y: 0), width: 400, height: 600)
 
 
 
-// draw squares
 for y in stride(from: 0, to: 400, by: 100){
 
     
     for x in stride(from: 0, to: 400, by: 100){
     
+        
+        // draw squares
+
         canvas.fillColor = Color.white
     
         var vertices: [Point] = []
@@ -41,22 +43,29 @@ for y in stride(from: 0, to: 400, by: 100){
     
         
         canvas.drawCustomShape(with: vertices)
+        
+        
+        // draw white circles
+        canvas.fillColor = deepRed
+
+        canvas.drawEllipse(at: Point(x: x + 50, y: y + 50), width: 60, height: 60)
+
     }
 }
 
 
-// draw white circles
+
 
 for y in stride(from: 0, to: 400, by: 100){
 
+    canvas.fillColor = blue
+    
     for x in stride(from: 0, to: 400, by: 100){
-    
-        canvas.fillColor = deepRed
+ 
+
+        canvas.drawEllipse(at: Point(x: x + 80, y: y + 20), width: 60, height: 60)
         
-        canvas.drawEllipse(at: Point(x: x + 50, y: y + 50), width: 60, height: 60)
-    
-    
-    
+
+
     }
 }
-
