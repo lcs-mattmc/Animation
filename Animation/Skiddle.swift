@@ -18,12 +18,11 @@ class Skiddle: NSObject, Sketchable {
     
     // This function runs once
     override init() {
-        
         // Create canvas object – specify size
         canvas = Canvas(width: 300, height: 300)
         
         // slow it down
-        canvas.framesPerSecond = 3
+        canvas.framesPerSecond = 55
                 
     }
     
@@ -31,7 +30,7 @@ class Skiddle: NSObject, Sketchable {
     func draw() {
       
         
-        
+        let blue = Color(hue: 201, saturation: 72, brightness: 85, alpha: 65)
         // clear the last design
         canvas.fillColor = Color.white
         canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 300)
@@ -39,17 +38,17 @@ class Skiddle: NSObject, Sketchable {
         
         
         //required code end
-        canvas.defaultLineWidth = 5
+        canvas.defaultLineWidth = 7
 
 
         // generate 7 radom 0s or 1s
         for x in stride (from: 0, through: 300, by: 50) {
             
             // generate the random 1 or 0
-            let skiddle = Bool.random ()
+            let skiddles = Bool.random ()
             
             // when skiddle is (true) 1 we draw first
-            if skiddle == true {
+            if skiddles == true {
                 
                 // draw line first, then go every other
                 for y in stride(from: 50, through: 250, by: 100){
@@ -74,19 +73,21 @@ class Skiddle: NSObject, Sketchable {
         }
 
 
-
+       
 
         // generate 7 radom 0s or 1s
         for y in stride (from: 0, through: 300, by: 50) {
             
             // generate the random 1 or 0
-            let skiddle = Bool.random ()
+            let skiddles = Bool.random ()
             
             // when skiddle is (true) 1 we draw first
-            if skiddle == true {
+            if skiddles == true {
                 
                 // draw line first, then go every other
                 for x in stride(from: 50, through: 250, by: 100){
+                    
+                
                     
                     //draw a line
                     canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y))
@@ -98,11 +99,11 @@ class Skiddle: NSObject, Sketchable {
                     
                     // draw a line
                     canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y ))
+                    canvas.lineColor = blue
                     
                     
                     
-                    
-                    
+                
                 }
             }
         }
