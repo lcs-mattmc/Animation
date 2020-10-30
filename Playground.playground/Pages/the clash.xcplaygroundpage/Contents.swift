@@ -18,11 +18,13 @@ let offWhite = Color(hue: 208, saturation: 1, brightness: 88, alpha: 100)
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 let deepRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 100)
 
+let seeRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 65)
+
 
 // background color
 canvas.fillColor = deepRed
 canvas.drawRectangle(at:Point(x: 0, y: 0), width: 400, height: 600)
-
+canvas.drawShapesWithBorders = false
 
 
 for y in stride(from: 0, to: 400, by: 100){
@@ -73,14 +75,19 @@ for y in stride(from: 0, to: 400, by: 100){
 
 for y in stride(from: 0, to: 350, by: 100){
 
-    canvas.fillColor = deepRed
+    canvas.fillColor = seeRed
     
     for x in stride(from: 0, to: 430, by: 100){
  
 
-        canvas.drawEllipse(at: Point(x: x + 135, y: y - 15), width: 60, height: 60)
+        canvas.drawEllipse(at: Point(x: x + 130, y: y - 15), width: 60, height: 60)
         
 
 
     }
 }
+
+
+
+
+canvas.drawText(message: "The Clash", at: Point(x: 40, y: 450), size: 65, kerning: 2)
