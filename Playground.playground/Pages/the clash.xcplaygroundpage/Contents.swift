@@ -69,3 +69,18 @@ for y in stride(from: 0, to: 400, by: 100){
 
     }
 }
+
+
+for y in stride(from: 0, to: 350, by: 100){
+
+    canvas.fillColor = deepRed
+    
+    for x in stride(from: 0, to: 430, by: 100){
+ 
+
+        canvas.drawEllipse(at: Point(x: x + 135, y: y - 15), width: 60, height: 60)
+        
+
+
+    }
+}
