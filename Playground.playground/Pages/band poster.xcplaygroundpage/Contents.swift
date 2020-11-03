@@ -13,11 +13,11 @@ PlaygroundPage.current.liveView = canvas
 //required code end
 
 let orange = Color(hue: 21, saturation: 76, brightness: 94, alpha: 100)
-let blue = Color(hue: 201, saturation: 72, brightness: 85, alpha: 70)
+let blue = Color(hue: 201, saturation: 72, brightness: 85, alpha: 75)
 let offWhite = Color(hue: 208, saturation: 1, brightness: 88, alpha: 100)
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 let deepRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 100)
-let seeRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 70)
+let seeRed = Color(hue: 5, saturation: 85, brightness: 94, alpha: 75)
 
 // background color
 canvas.fillColor = deepRed
