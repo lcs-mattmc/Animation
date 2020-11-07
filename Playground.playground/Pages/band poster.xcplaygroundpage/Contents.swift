@@ -25,38 +25,77 @@ canvas.drawRectangle(at:Point(x: 0, y: 0), width: 400, height: 600)
 canvas.drawShapesWithBorders = false
 
 
-for y in stride(from: 0, to: 400, by: 50){
-    canvas.fillColor = offWhite
-    for x in stride(from: 0, to: 400, by: 50){
-        
-        canvas.drawEllipse(at: Point(x: x + 25, y: y + 25), width: 50, height: 50)
-        
-        
-    }
-}
+canvas.fillColor = Color.blue
+var vertices: [Point] = []
+vertices.append(Point(x: 0, y: 0))
+vertices.append(Point(x: 0, y: 300))
+vertices.append(Point(x: 20, y: 290))
+vertices.append(Point(x: 40, y: 335))
+vertices.append(Point(x: 100, y: 280))
+vertices.append(Point(x: 170, y: 340))
+vertices.append(Point(x: 220, y: 290))
+vertices.append(Point(x: 250, y: 310))
+vertices.append(Point(x: 290, y: 270))
+vertices.append(Point(x: 330, y: 310))
+vertices.append(Point(x: 360, y: 280))
+vertices.append(Point(x: 400, y: 320))
+vertices.append(Point(x: 400, y: 0))
+
+canvas.fillColor = Color.blue
+canvas.drawCustomShape(with: vertices)
+
+    
+
+canvas.drawText(message: "nirvana", at: Point(x: 40, y: 420), size: 60, kerning: 1)
+
+canvas.drawText(message: "20/5/99", at: Point(x: 40, y: 470), size: 52, kerning: 1)
 
 
-for y in stride(from: 0, to: 400, by: 50){
-    canvas.fillColor = seeRed
-    for x in stride(from: 0, to: 400, by: 50){
-        
-        canvas.drawEllipse(at: Point(x: x + 35, y: y + 35), width: 40, height: 40)
-        
-        
-    }
-}
+//canvas.defaultLineWidth = 10
+//canvas.drawLine(from: Point(x: 0, y: 200), to: Point(x: 40, y: 220))
+//canvas.drawLine(from: Point(x: 40, y: 220), to: Point(x: 80, y: 180))
+//canvas.drawLine(from: Point(x: 80, y: 180), to: Point(x: 130, y: 240))
+//canvas.drawLine(from: Point(x: 130, y: 240), to: Point(x: 170, y: 190))
+//canvas.drawLine(from: Point(x: 170, y: 190), to: Point(x: 230, y: 220))
+//canvas.drawLine(from: Point(x: 230, y: 220), to: Point(x: 260, y: 170))
+//canvas.drawLine(from: Point(x: 260, y: 170), to: Point(x: 310, y: 220))
+//canvas.drawLine(from: Point(x: 310, y: 220), to: Point(x: 400, y: 180))
 
-canvas.drawText(message: "Nirvana", at: Point(x: 40, y: 450), size: 60, kerning: 1)
+canvas.fillColor = Color.blue
+var vertices1: [Point] = []
+vertices1.append(Point(x: 0, y: 0))
+vertices1.append(Point(x: 0, y: 300 - 100))
+vertices1.append(Point(x: 20, y: 290 - 100))
+vertices1.append(Point(x: 40, y: 335 - 100))
+vertices1.append(Point(x: 100, y: 280 - 100))
+vertices1.append(Point(x: 170, y: 340 - 100))
+vertices1.append(Point(x: 220, y: 290 - 100))
+vertices1.append(Point(x: 250, y: 310 - 100))
+vertices1.append(Point(x: 290, y: 270 - 100))
+vertices1.append(Point(x: 330, y: 310 - 100))
+vertices1.append(Point(x: 360, y: 280 - 100))
+vertices1.append(Point(x: 400, y: 320 - 100))
+vertices1.append(Point(x: 400, y: 0))
 
+canvas.fillColor = Color.red
+canvas.drawCustomShape(with: vertices1)
 
+canvas.fillColor = Color.blue
+var vertices2: [Point] = []
+vertices2.append(Point(x: 0, y: 0))
+vertices2.append(Point(x: 0, y: 300 - 150))
+vertices2.append(Point(x: 20, y: 290 - 150))
+vertices2.append(Point(x: 40, y: 335 - 150))
+vertices2.append(Point(x: 100, y: 280 - 150))
+vertices2.append(Point(x: 170, y: 340 - 150))
+vertices2.append(Point(x: 220, y: 290 - 150))
+vertices2.append(Point(x: 250, y: 310 - 150))
+vertices2.append(Point(x: 290, y: 270 - 150))
+vertices2.append(Point(x: 330, y: 310 - 150))
+vertices2.append(Point(x: 360, y: 280 - 150))
+vertices2.append(Point(x: 400, y: 320 - 150))
+vertices2.append(Point(x: 400, y: 0))
 
-for y in stride(from: 0, to: 400, by: 50){
-    canvas.fillColor = blue
-    for x in stride(from: 0, to: 400, by: 50){
-        
-        canvas.drawEllipse(at: Point(x: x + 15, y: y + 15), width: 40, height: 40)
-        
-        
-    }
-}
+canvas.fillColor = Color.blue
+canvas.drawCustomShape(with: vertices2)
 
