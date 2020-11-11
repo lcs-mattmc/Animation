@@ -99,3 +99,24 @@ vertices2.append(Point(x: 400, y: 0))
 canvas.fillColor = Color.blue
 canvas.drawCustomShape(with: vertices2)
 
+
+
+
+canvas.fillColor = Color.blue
+var vertices3: [Point] = []
+vertices3.append(Point(x: 360, y: 560))
+vertices3.append(Point(x: 40, y: 560))
+vertices3.append(Point(x: 20, y: 300))
+vertices3.append(Point(x: 100, y: 280))
+vertices3.append(Point(x: 45, y: 555))
+vertices3.append(Point(x: 355, y: 555))
+vertices3.append(Point(x: 0, y: 0))
+vertices3.append(Point(x: 0, y: 0))
+vertices3.append(Point(x: 0, y: 0))
+vertices3.append(Point(x: 0, y: 0))
+vertices3.append(Point(x: 0, y: 0))
+vertices3.append(Point(x: 0, y: 0))
+vertices3.append(Point(x: 0, y: 0))
+
+canvas.fillColor = Color.white
+canvas.drawCustomShape(with: vertices3)
