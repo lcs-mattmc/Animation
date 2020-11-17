@@ -10,8 +10,9 @@ class Sketch: NSObject {
     //       Therefore, the line immediately below, or one like it, must always be present.
 //    var currentDrawing = BasicSketch()
 //    var currentDrawing = Skiddle()
-        var currentDrawing = Spiral()
-
+//        var currentDrawing = Spiral()
+    var currentDrawing = FunctionArt1()
+    
     // To try out other included sketches:
     // 1. Comment out the code on line 11.
     // 2. Uncomment one of the lines below.

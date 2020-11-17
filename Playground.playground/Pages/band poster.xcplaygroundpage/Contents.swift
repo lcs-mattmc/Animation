@@ -5,8 +5,12 @@ import Cocoa
 import PlaygroundSupport
 import CanvasGraphics
 
+
+
+
 // Create canvas
-let canvas = Canvas(width: preferredWidth, height: preferredHeight)
+//let canvas = Canvas(width: preferredWidth, height: preferredHeight)
+let canvas = Canvas(width: preferredWidth, height: preferredHeight, quality: .Ultra)
 
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
@@ -37,7 +41,7 @@ vertices.append(Point(x: 220, y: 290))
 vertices.append(Point(x: 250, y: 310))
 vertices.append(Point(x: 290, y: 270))
 vertices.append(Point(x: 330, y: 310))
-vertices.append(Point(x: 360, y: 280))
+vertices.append(Point(x: 360, y: 300))
 vertices.append(Point(x: 400, y: 320))
 vertices.append(Point(x: 400, y: 0))
 
@@ -46,20 +50,22 @@ canvas.drawCustomShape(with: vertices)
 
     
 
-canvas.drawText(message: "nirvana", at: Point(x: 40, y: 420), size: 60, kerning: 1)
+canvas.drawText(message: "Nirvana", at: Point(x: 88, y: 428), size: 60, kerning: 1)
 
-canvas.drawText(message: "20/5/99", at: Point(x: 40, y: 470), size: 52, kerning: 1)
+canvas.drawText(message: "20/5/99", at: Point(x: 80, y: 570), size: 12, kerning: 1)
+
+canvas.drawText(message: "$15", at: Point(x: 295, y: 570), size: 12, kerning: 1)
 
 
-//canvas.defaultLineWidth = 10
-//canvas.drawLine(from: Point(x: 0, y: 200), to: Point(x: 40, y: 220))
-//canvas.drawLine(from: Point(x: 40, y: 220), to: Point(x: 80, y: 180))
-//canvas.drawLine(from: Point(x: 80, y: 180), to: Point(x: 130, y: 240))
-//canvas.drawLine(from: Point(x: 130, y: 240), to: Point(x: 170, y: 190))
-//canvas.drawLine(from: Point(x: 170, y: 190), to: Point(x: 230, y: 220))
-//canvas.drawLine(from: Point(x: 230, y: 220), to: Point(x: 260, y: 170))
-//canvas.drawLine(from: Point(x: 260, y: 170), to: Point(x: 310, y: 220))
-//canvas.drawLine(from: Point(x: 310, y: 220), to: Point(x: 400, y: 180))
+canvas.defaultLineWidth = 10
+canvas.drawLine(from: Point(x: 0, y: 200), to: Point(x: 40, y: 220))
+canvas.drawLine(from: Point(x: 40, y: 220), to: Point(x: 80, y: 180))
+canvas.drawLine(from: Point(x: 80, y: 180), to: Point(x: 130, y: 240))
+canvas.drawLine(from: Point(x: 130, y: 240), to: Point(x: 170, y: 190))
+canvas.drawLine(from: Point(x: 170, y: 190), to: Point(x: 230, y: 220))
+canvas.drawLine(from: Point(x: 230, y: 220), to: Point(x: 260, y: 170))
+canvas.drawLine(from: Point(x: 260, y: 170), to: Point(x: 310, y: 220))
+canvas.drawLine(from: Point(x: 310, y: 220), to: Point(x: 400, y: 180))
 
 canvas.fillColor = Color.blue
 var vertices1: [Point] = []
@@ -110,13 +116,15 @@ vertices3.append(Point(x: 20, y: 300))
 vertices3.append(Point(x: 100, y: 280))
 vertices3.append(Point(x: 45, y: 555))
 vertices3.append(Point(x: 355, y: 555))
-vertices3.append(Point(x: 0, y: 0))
-vertices3.append(Point(x: 0, y: 0))
-vertices3.append(Point(x: 0, y: 0))
-vertices3.append(Point(x: 0, y: 0))
-vertices3.append(Point(x: 0, y: 0))
-vertices3.append(Point(x: 0, y: 0))
-vertices3.append(Point(x: 0, y: 0))
+vertices3.append(Point(x: 300, y: 280))
+vertices3.append(Point(x: 380, y: 300))
+//vertices3.append(Point(x: 0, y: 0))
+//vertices3.append(Point(x: 0, y: 0))
+//vertices3.append(Point(x: 0, y: 0))
+//vertices3.append(Point(x: 0, y: 0))
+//vertices3.append(Point(x: 0, y: 0))
 
 canvas.fillColor = Color.white
 canvas.drawCustomShape(with: vertices3)
+
+canvas.copyToClipboard()
