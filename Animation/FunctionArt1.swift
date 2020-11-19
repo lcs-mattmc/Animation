@@ -16,34 +16,36 @@ class FunctionArt1: NSObject, Sketchable {
 
     // Add many spirals
     // This is now a list, or an array, of functions
-    var Functions: [MathFunction] = []    // empty list
+    var functions: [MathFunction] = []    // empty list
     
     // This function runs once
     override init() {
         
-    
+        
+        
         // Create canvas object – specify size
         canvas = Canvas(width: 1000, height: 1000)
              
         // Initialize many spirals
-        for i in 1...25 {
+        for i in 1...40 {
             
             //create many functions
-            let newFunction = MathFunction(a: 1.0,
-                                           k: 15.0,
+            let newFunction = MathFunction(a: 10.0,
+                                           k: 10.0,
                                            d: CGFloat(i) * 30,
-                                           c: -100,
-                                           canvas: canvas)
+                                           c: 10,
+                                           canvas: canvas,
+                                           type: .absoluteValue)
             
             // add it to the list
-            Functions.append(newFunction)
+            functions.append(newFunction)
             
             
             
         }
         
         // Speed
-        canvas.framesPerSecond = 60
+        canvas.framesPerSecond = 80
     }
 
     // This function runs repeatedly, forever, to create the animated effect
@@ -52,14 +54,15 @@ class FunctionArt1: NSObject, Sketchable {
         // What frame are we on?
         print(canvas.frameCount)
         
-        canvas.defaultLineWidth = 2
+        canvas.defaultLineWidth = 60
         
         // Set the origin to be the middle of the canvas
-        canvas.translate(to: Point(x: canvas.width / 5, y: canvas.height / 2))
-
+//        canvas.translate(to: Point(x: canvas.width / 11, y: canvas.height / 4))
+        canvas.translate(to: Point(x: -100, y: 170))
+        
         // Update the position of that one spiral
-        for functions in Functions {
-            functions.update(on: canvas)
+        for function in functions {
+            function.update(on: canvas)
         }
 
     }

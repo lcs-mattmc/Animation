@@ -19,7 +19,7 @@ class Skiddle: NSObject, Sketchable {
     // This function runs once
     override init() {
         // Create canvas object – specify size
-        canvas = Canvas(width: 300, height: 300)
+        canvas = Canvas(width: 1500, height: 1000)
         
         // slow it down
         canvas.framesPerSecond = 55
@@ -30,19 +30,20 @@ class Skiddle: NSObject, Sketchable {
     func draw() {
       
         
-        let blue = Color(hue: 201, saturation: 72, brightness: 85, alpha: 65)
+    
         // clear the last design
-        canvas.fillColor = Color.white
-        canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 300)
+//        canvas.fillColor = Color.white
+        canvas.fillColor = Color(hue: Int.random(in: 0...360), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
+        canvas.drawRectangle(at: Point(x: 0, y: 0), width: 1500, height: 1000)
         
         
         
         //required code end
-        canvas.defaultLineWidth = 7
+        canvas.defaultLineWidth = 5
 
 
         // generate 7 radom 0s or 1s
-        for x in stride (from: 0, through: 300, by: 50) {
+        for x in stride (from: 0, through: 1500, by: 12.5) {
             
             // generate the random 1 or 0
             let skiddles = Bool.random ()
@@ -51,18 +52,18 @@ class Skiddle: NSObject, Sketchable {
             if skiddles == true {
                 
                 // draw line first, then go every other
-                for y in stride(from: 50, through: 250, by: 100){
+                for y in stride(from: 25, through: 1000, by: 25){
                     
                     //draw a line
-                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + 50))
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + 12))
                     
                 }
             } else {
                 // draw a gap first, then go every other
-                for y in stride (from: 0, through: 200, by: 100){
+                for y in stride (from: 0, through: 1000, by: 25){
                     
                     // draw a line
-                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + 50))
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x, y: y + 12))
                     
                     
                     
@@ -76,7 +77,7 @@ class Skiddle: NSObject, Sketchable {
        
 
         // generate 7 radom 0s or 1s
-        for y in stride (from: 0, through: 300, by: 50) {
+        for y in stride (from: 0, through: 1000, by: 12.5) {
             
             // generate the random 1 or 0
             let skiddles = Bool.random ()
@@ -85,21 +86,22 @@ class Skiddle: NSObject, Sketchable {
             if skiddles == true {
                 
                 // draw line first, then go every other
-                for x in stride(from: 50, through: 250, by: 100){
+                for x in stride(from: 25, through: 1500, by: 12.5){
                     
                 
                     
                     //draw a line
-                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y))
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 12.5, y: y))
                     
                 }
             } else {
                 // draw a gap first, then go every other
-                for x in stride (from: 0, through: 200, by: 100){
+                for x in stride (from: 0, through: 1500, by: 25){
                     
                     // draw a line
-                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 50, y: y ))
-                    canvas.lineColor = blue
+                    canvas.drawLine(from: Point(x: x, y: y), to: Point(x: x + 12, y: y ))
+                   
+                    canvas.lineColor = Color(hue: Int.random(in: 0...360), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
                     
                     
                     
