@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500B539F256625AC00F2E6A5 /* eyetest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B539E256625AC00F2E6A5 /* eyetest.swift */; };
+		500B53A22566C35300F2E6A5 /* eyetestblue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B53A12566C35300F2E6A5 /* eyetestblue.swift */; };
 		506008272541FB9E00BFACCE /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506008262541FB9E00BFACCE /* FiveCircles.swift */; };
 		5082BE28255AF79900BB2FCC /* Spiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BE27255AF79900BB2FCC /* Spiral.swift */; };
 		5082BE2B255AF85700BB2FCC /* IndividualSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		500B539E256625AC00F2E6A5 /* eyetest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyetest.swift; sourceTree = "<group>"; };
+		500B53A12566C35300F2E6A5 /* eyetestblue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyetestblue.swift; sourceTree = "<group>"; };
 		506008262541FB9E00BFACCE /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		5082BE27255AF79900BB2FCC /* Spiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiral.swift; sourceTree = "<group>"; };
 		5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSpiral.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				5082BE27255AF79900BB2FCC /* Spiral.swift */,
 				5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */,
 				5094447925643555007C40C1 /* FunctionArt1.swift */,
+				500B539E256625AC00F2E6A5 /* eyetest.swift */,
+				500B53A12566C35300F2E6A5 /* eyetestblue.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 			files = (
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
 				5082BE28255AF79900BB2FCC /* Spiral.swift in Sources */,
+				500B539F256625AC00F2E6A5 /* eyetest.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
@@ -508,6 +515,7 @@
 				5089DA4C2548817800E53C9B /* Skiddle.swift in Sources */,
 				814ADAF3248E9FDA00F80486 /* Sketchable.swift in Sources */,
 				5094447A25643555007C40C1 /* FunctionArt1.swift in Sources */,
+				500B53A22566C35300F2E6A5 /* eyetestblue.swift in Sources */,
 				5082BE2B255AF85700BB2FCC /* IndividualSpiral.swift in Sources */,
 				814ADAFD248EB56900F80486 /* EmptySketch.swift in Sources */,
 				5094447725642F87007C40C1 /* mathfunction.swift in Sources */,

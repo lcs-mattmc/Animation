@@ -30,12 +30,12 @@ class FunctionArt1: NSObject, Sketchable {
         for i in 1...40 {
             
             //create many functions
-            let newFunction = MathFunction(a: 10.0,
-                                           k: 10.0,
+            let newFunction = MathFunction(a: 1.0,
+                                           k: 5.0,
                                            d: CGFloat(i) * 30,
-                                           c: 10,
+                                           c: 0,
                                            canvas: canvas,
-                                           type: .absoluteValue)
+                                           type: .cubic)
             
             // add it to the list
             functions.append(newFunction)
@@ -45,7 +45,7 @@ class FunctionArt1: NSObject, Sketchable {
         }
         
         // Speed
-        canvas.framesPerSecond = 80
+        canvas.framesPerSecond = 2
     }
 
     // This function runs repeatedly, forever, to create the animated effect
@@ -60,11 +60,20 @@ class FunctionArt1: NSObject, Sketchable {
 //        canvas.translate(to: Point(x: canvas.width / 11, y: canvas.height / 4))
         canvas.translate(to: Point(x: -100, y: 170))
         
+        // draw list of functions all at onece
+        for x in 0...canvas.width {
+        
+        // randomly change the thingy
+            
+            
         // Update the position of that one spiral
         for function in functions {
-            function.update(on: canvas)
+            function.update(on: canvas,
+                            usingInputValue: x)
+        }
         }
 
     }
 
 }
+

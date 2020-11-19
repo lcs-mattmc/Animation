@@ -72,7 +72,7 @@ class MathFunction {
         if canvas.frameCount > 0 {
             
             // Determine the next x position
-            let nextX: CGFloat = CGFloat(canvas.frameCount - canvas.width / 2)
+            let nextX: CGFloat = CGFloat(canvas.frameCount: x)
             
             // Determine the next y position
             var nextY: CGFloat = 0.0
@@ -100,11 +100,11 @@ class MathFunction {
             //            print(nextPoint)
             
             // Set the line color
-            canvas.lineColor = Color(hue: Int.random(in: 0...360), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
+            canvas.lineColor = Color(hue: Int.random(in: 150...250), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
                           
             
             // set line thickness
-            canvas.defaultLineWidth = 10
+            canvas.defaultLineWidth = 35
             
             // Draw a line from the last point to the next point
             canvas.drawLine(from: lastPoint, to: nextPoint)
