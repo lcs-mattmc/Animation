@@ -11,8 +11,8 @@ class Sketch: NSObject {
 //    var currentDrawing = BasicSketch()
 //    var currentDrawing = Skiddle()
 //    var currentDrawing = Spiral()
-    var currentDrawing = FunctionArt1()
-//    var currentDrawing = eyetest()
+//    var currentDrawing = FunctionArt1()
+    var currentDrawing = eyetest()
 //      var currentDrawing = eyetestblue()
     
     

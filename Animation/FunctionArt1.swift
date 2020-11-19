@@ -35,7 +35,7 @@ class FunctionArt1: NSObject, Sketchable {
                                            d: CGFloat(i) * 30 - CGFloat(canvas.width) / 2,
                                            c: 0,
                                            canvas: canvas,
-                                           type: .cubic)
+                                           type: .reciprocal)
             
             // add it to the list
             functions.append(newFunction)
@@ -51,6 +51,10 @@ class FunctionArt1: NSObject, Sketchable {
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
         
+        // Clear the background
+        canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 100, alpha: 20)
+        canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
+        
         // What frame are we on?
         print(canvas.frameCount)
         
@@ -60,14 +64,20 @@ class FunctionArt1: NSObject, Sketchable {
         //        canvas.translate(to: Point(x: canvas.width / 11, y: canvas.height / 4))
         canvas.translate(to: Point(x: canvas.width / 2, y: canvas.height / 2))
         
+        
+        // Randomly set a vertical position
+        let newC = CGFloat.random(in: -100...100)
+        
+        
         // draw list of functions all at onece
         for x in 0...canvas.width {
             
-            // randomly change the thingy
-            
-            
             // Update the position of that one spiral
             for function in functions {
+
+                // randomly change the thingy
+                function.c = newC
+                
                 function.update(on: canvas,
                                 usingInputValue: x)
             }
