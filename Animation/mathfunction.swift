@@ -49,7 +49,7 @@ class MathFunction {
          canvas: Canvas,
          type: FunctionType) {
         
-        // I want every spiral to begin at the bottom left
+        // I want every function to begin off the left side of the canvas
         self.lastPoint = Point(x: -1 * canvas.width / 2 - 5, y: 0)
         
         // initalize
@@ -66,13 +66,20 @@ class MathFunction {
     //    Here we describe what behaviour we want to have happen.
     
     // Update (or draw) the position of this spiral
-    func update(on canvas: Canvas) {
+    func update(on canvas: Canvas, usingInputValue x: Int) {
+        
+        // At the start of drawing a new function, again, draw off left side to start
+        if x == 0 {
+            // I want every function to begin off the left side of the canvas
+            self.lastPoint = Point(x: -1 * canvas.width / 2 - 5, y: 0)
+
+        }
         
         // Start drawing after the first frame
-        if canvas.frameCount > 0 {
+        if x > 0 && x < canvas.width {
             
             // Determine the next x position
-            let nextX: CGFloat = CGFloat(canvas.frameCount: x)
+            let nextX: CGFloat = CGFloat(x - canvas.width / 2)
             
             // Determine the next y position
             var nextY: CGFloat = 0.0
@@ -100,11 +107,11 @@ class MathFunction {
             //            print(nextPoint)
             
             // Set the line color
-            canvas.lineColor = Color(hue: Int.random(in: 150...250), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
-                          
+//            canvas.lineColor = Color(hue: Int.random(in: 150...250), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
+            canvas.lineColor = Color.blue
             
             // set line thickness
-            canvas.defaultLineWidth = 35
+            canvas.defaultLineWidth = 3
             
             // Draw a line from the last point to the next point
             canvas.drawLine(from: lastPoint, to: nextPoint)
