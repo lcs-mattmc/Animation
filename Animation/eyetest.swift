@@ -22,7 +22,7 @@ class eyetest: NSObject, Sketchable {
         canvas = Canvas(width: 1500, height: 1000)
         
         // slow it down
-        canvas.framesPerSecond = 65
+        canvas.framesPerSecond = 60
                 
     }
     
@@ -31,7 +31,10 @@ class eyetest: NSObject, Sketchable {
       
         
         // clear the last design
-        canvas.fillColor = Color(hue: Int.random(in: 0...360), saturation: Int.random(in: 75...100),
+        
+//        canvas.fillColor = Color(hue: 220, saturation: 80, brightness: 30, alpha: 90)
+        
+        canvas.fillColor = Color(hue: Int.random(in: 40...360), saturation: Int.random(in: 75...100),
         brightness: 100, alpha: Int.random(in: 50...100))
         canvas.drawRectangle(at: Point(x: 0, y: 0), width: 1500, height: 1000)
         
