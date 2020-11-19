@@ -12,7 +12,7 @@
 		506008272541FB9E00BFACCE /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506008262541FB9E00BFACCE /* FiveCircles.swift */; };
 		5082BE28255AF79900BB2FCC /* Spiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BE27255AF79900BB2FCC /* Spiral.swift */; };
 		5082BE2B255AF85700BB2FCC /* IndividualSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */; };
-		5089DA4C2548817800E53C9B /* Skiddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089DA4B2548817800E53C9B /* Skiddle.swift */; };
+		5089DA4C2548817800E53C9B /* skiddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089DA4B2548817800E53C9B /* skiddle.swift */; };
 		5094447725642F87007C40C1 /* mathfunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5094447625642F87007C40C1 /* mathfunction.swift */; };
 		5094447A25643555007C40C1 /* FunctionArt1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5094447925643555007C40C1 /* FunctionArt1.swift */; };
 		81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A091C130A10007ED524 /* AppDelegate.swift */; };
@@ -68,7 +68,7 @@
 		506008262541FB9E00BFACCE /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		5082BE27255AF79900BB2FCC /* Spiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiral.swift; sourceTree = "<group>"; };
 		5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSpiral.swift; sourceTree = "<group>"; };
-		5089DA4B2548817800E53C9B /* Skiddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiddle.swift; sourceTree = "<group>"; };
+		5089DA4B2548817800E53C9B /* skiddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skiddle.swift; sourceTree = "<group>"; };
 		5094447625642F87007C40C1 /* mathfunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mathfunction.swift; sourceTree = "<group>"; };
 		5094447925643555007C40C1 /* FunctionArt1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt1.swift; sourceTree = "<group>"; };
 		81064A061C130A10007ED524 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +183,7 @@
 				814ADAFE248EB5E300F80486 /* StaticSketch.swift */,
 				814ADAFC248EB56900F80486 /* EmptySketch.swift */,
 				506008262541FB9E00BFACCE /* FiveCircles.swift */,
-				5089DA4B2548817800E53C9B /* Skiddle.swift */,
+				5089DA4B2548817800E53C9B /* skiddle.swift */,
 				5082BE27255AF79900BB2FCC /* Spiral.swift */,
 				5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */,
 				5094447925643555007C40C1 /* FunctionArt1.swift */,
@@ -512,7 +512,7 @@
 				506008272541FB9E00BFACCE /* FiveCircles.swift in Sources */,
 				814ADAFB248EB45F00F80486 /* AudioInputSketch.swift in Sources */,
 				814ADAF1248E9F8200F80486 /* AudioAnalyser.swift in Sources */,
-				5089DA4C2548817800E53C9B /* Skiddle.swift in Sources */,
+				5089DA4C2548817800E53C9B /* skiddle.swift in Sources */,
 				814ADAF3248E9FDA00F80486 /* Sketchable.swift in Sources */,
 				5094447A25643555007C40C1 /* FunctionArt1.swift in Sources */,
 				500B53A22566C35300F2E6A5 /* eyetestblue.swift in Sources */,
