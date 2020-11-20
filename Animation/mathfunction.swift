@@ -120,6 +120,7 @@ class MathFunction {
             lastPoint = nextPoint
             
             
+            
         }
     }
     
