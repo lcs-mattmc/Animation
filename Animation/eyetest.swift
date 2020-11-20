@@ -22,7 +22,7 @@ class eyetest: NSObject, Sketchable {
         canvas = Canvas(width: 1500, height: 1000)
         
         // slow it down
-        canvas.framesPerSecond = 60
+        canvas.framesPerSecond = 2
                 
     }
     
