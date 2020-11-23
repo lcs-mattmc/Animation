@@ -35,7 +35,7 @@ class FunctionArt1: NSObject, Sketchable {
                                            d: CGFloat(i) * 30 - CGFloat(canvas.width) / 2,
                                            c: 0,
                                            canvas: canvas,
-                                           type: .reciprocal)
+                                           type: .linear)
             
             // add it to the list
             functions.append(newFunction)
@@ -45,7 +45,7 @@ class FunctionArt1: NSObject, Sketchable {
         }
         
         // Speed
-        canvas.framesPerSecond = 2
+        canvas.framesPerSecond = 59
     }
     
     // This function runs repeatedly, forever, to create the animated effect

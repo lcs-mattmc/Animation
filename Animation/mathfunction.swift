@@ -58,6 +58,8 @@ class MathFunction {
         self.d = d
         self.c = c
         self.type = type
+        self.Delayinseconds = Delayinseconds
+        
         
     }
     

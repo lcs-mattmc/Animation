@@ -22,7 +22,7 @@ class Skiddle: NSObject, Sketchable {
         canvas = Canvas(width: 1000, height: 1000)
         
         // slow it down
-        canvas.framesPerSecond = 55
+        canvas.framesPerSecond = 10
                 
     }
     
@@ -31,9 +31,26 @@ class Skiddle: NSObject, Sketchable {
       
         
         // clear the last design
-        canvas.fillColor = Color(hue: Int.random(in: 0...360), saturation: Int.random(in: 75...100),
-        brightness: 100, alpha: Int.random(in: 50...100))
-        canvas.drawRectangle(at: Point(x: 0, y: 0), width: 1000, height: 1000)
+//        canvas.fillColor = Color(hue: Int.random(in: 0...360), saturation: Int.random(in: 75...100),
+//        brightness: 100, alpha: Int.random(in: 50...100))
+        
+            
+            // generate the random 1 or 0
+            let skiddles = Bool.random ()
+            
+            // when skiddle is (true) 1 we draw first
+            if skiddles == true {
+                
+                    //draw a line
+                    canvas.fillColor = Color(hue: 265, saturation: 100, brightness: 80, alpha: 65)
+                canvas.drawRectangle(at: Point(x: 0, y: 0), width: 1000, height: 1000)
+                    
+                
+            } else {
+                    
+                    // draw a line
+                    canvas.fillColor = Color.red
+                canvas.drawRectangle(at: Point(x: 0, y: 0), width: 1000, height: 1000)
         
         
         
@@ -108,7 +125,7 @@ class Skiddle: NSObject, Sketchable {
             }
         }
 
-
+            }
         
     }
     
