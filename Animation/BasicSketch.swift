@@ -29,21 +29,29 @@ class BasicSketch: NSObject, Sketchable {
         x = 250
         y = 50
         
+        
         // Slow
-        canvas.framesPerSecond = 24
+        canvas.framesPerSecond = 60
         
     }
+    
     
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
         
-        // Change position
-        x -= 1
-       
-        y += 12
+        canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 100, alpha: 40)
+        canvas.drawRectangle(at: Point(x: 0, y: 0), width: 500, height: 500)
         
-        // Draw an ellipse in the middle of the canvas
-        canvas.drawEllipse(at: Point(x: x, y: y), width: 50, height: 50)
+        canvas.fillColor = Color(hue: Int.random(in: 75...360), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
+        
+        // set the position at randon
+        let x = Int.random(in: 40...480)
+        let y = Int.random(in: 40...480)
+        
+//        print("x is \(x) and y is \(y)")
+        
+        canvas.drawEllipse(at: Point(x: x, y: y), width: 80, height: 80)
+        
         
     }
     

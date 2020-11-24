@@ -8,8 +8,8 @@ class Sketch: NSObject {
     //       the Sketchable protocol.
     //
     //       Therefore, the line immediately below, or one like it, must always be present.
-//    var currentDrawing = BasicSketch()
-    var currentDrawing = Skiddle()
+    var currentDrawing = BasicSketch()
+//    var currentDrawing = Skiddle()
 //    var currentDrawing = Spiral()
 //    var currentDrawing = FunctionArt1()
 //    var currentDrawing = eyetest()
