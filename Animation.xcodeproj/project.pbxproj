@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		500B539F256625AC00F2E6A5 /* eyetest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B539E256625AC00F2E6A5 /* eyetest.swift */; };
 		500B53A22566C35300F2E6A5 /* eyetestblue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B53A12566C35300F2E6A5 /* eyetestblue.swift */; };
+		503065D0256D71C9003DCA44 /* Skiddle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503065CF256D71C9003DCA44 /* Skiddle2.swift */; };
 		506008272541FB9E00BFACCE /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506008262541FB9E00BFACCE /* FiveCircles.swift */; };
 		5082BE28255AF79900BB2FCC /* Spiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BE27255AF79900BB2FCC /* Spiral.swift */; };
 		5082BE2B255AF85700BB2FCC /* IndividualSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */; };
 		5086E9882568036600153E52 /* FunctionArt2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086E9872568036600153E52 /* FunctionArt2.swift */; };
-		5089DA4C2548817800E53C9B /* Skiddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089DA4B2548817800E53C9B /* Skiddle.swift */; };
 		5094447725642F87007C40C1 /* mathfunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5094447625642F87007C40C1 /* mathfunction.swift */; };
 		5094447A25643555007C40C1 /* FunctionArt1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5094447925643555007C40C1 /* FunctionArt1.swift */; };
 		81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A091C130A10007ED524 /* AppDelegate.swift */; };
@@ -66,11 +66,11 @@
 /* Begin PBXFileReference section */
 		500B539E256625AC00F2E6A5 /* eyetest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyetest.swift; sourceTree = "<group>"; };
 		500B53A12566C35300F2E6A5 /* eyetestblue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyetestblue.swift; sourceTree = "<group>"; };
+		503065CF256D71C9003DCA44 /* Skiddle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiddle2.swift; sourceTree = "<group>"; };
 		506008262541FB9E00BFACCE /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		5082BE27255AF79900BB2FCC /* Spiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiral.swift; sourceTree = "<group>"; };
 		5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSpiral.swift; sourceTree = "<group>"; };
 		5086E9872568036600153E52 /* FunctionArt2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt2.swift; sourceTree = "<group>"; };
-		5089DA4B2548817800E53C9B /* Skiddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiddle.swift; sourceTree = "<group>"; };
 		5094447625642F87007C40C1 /* mathfunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mathfunction.swift; sourceTree = "<group>"; };
 		5094447925643555007C40C1 /* FunctionArt1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArt1.swift; sourceTree = "<group>"; };
 		81064A061C130A10007ED524 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,13 +179,13 @@
 				81064A1B1C132DA2007ED524 /* Sketch.swift */,
 				81064A1A1C132D69007ED524 /* Support */,
 				814ADAF8248EB34900F80486 /* BasicSketch.swift */,
+				503065CF256D71C9003DCA44 /* Skiddle2.swift */,
 				5094447625642F87007C40C1 /* mathfunction.swift */,
 				814ADAF4248EAB6A00F80486 /* TurtleSketch.swift */,
 				814ADAFA248EB45F00F80486 /* AudioInputSketch.swift */,
 				814ADAFE248EB5E300F80486 /* StaticSketch.swift */,
 				814ADAFC248EB56900F80486 /* EmptySketch.swift */,
 				506008262541FB9E00BFACCE /* FiveCircles.swift */,
-				5089DA4B2548817800E53C9B /* Skiddle.swift */,
 				5082BE27255AF79900BB2FCC /* Spiral.swift */,
 				5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */,
 				5094447925643555007C40C1 /* FunctionArt1.swift */,
@@ -513,10 +513,10 @@
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
 				506008272541FB9E00BFACCE /* FiveCircles.swift in Sources */,
+				503065D0256D71C9003DCA44 /* Skiddle2.swift in Sources */,
 				814ADAFB248EB45F00F80486 /* AudioInputSketch.swift in Sources */,
 				5086E9882568036600153E52 /* FunctionArt2.swift in Sources */,
 				814ADAF1248E9F8200F80486 /* AudioAnalyser.swift in Sources */,
-				5089DA4C2548817800E53C9B /* Skiddle.swift in Sources */,
 				814ADAF3248E9FDA00F80486 /* Sketchable.swift in Sources */,
 				5094447A25643555007C40C1 /* FunctionArt1.swift in Sources */,
 				500B53A22566C35300F2E6A5 /* eyetestblue.swift in Sources */,
