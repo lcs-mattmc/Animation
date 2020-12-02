@@ -35,7 +35,7 @@ class FunctionArt2: NSObject, Sketchable {
                                            d: CGFloat(i) * 30 - CGFloat(canvas.width) / 2,
                                            c: 0,
                                            canvas: canvas,
-                                           type: .reciprocal)
+                                           type: .cubic)
             
             // add it to the list
             functions.append(newFunction)
@@ -45,14 +45,16 @@ class FunctionArt2: NSObject, Sketchable {
         }
         
         // Speed
-        canvas.framesPerSecond = 2
+        canvas.framesPerSecond = 50
     }
     
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
         
         // Clear the background
-        canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 100, alpha: 20)
+//        canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 100, alpha: 20)
+        canvas.fillColor = Color(hue: Int.random(in: 40...360), saturation: Int.random(in: 75...100),
+        brightness: 100, alpha: Int.random(in: 50...100))
         canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
         
         // What frame are we on?

@@ -110,7 +110,7 @@ class MathFunction {
             
             // Set the line color
 //            canvas.lineColor = Color(hue: Int.random(in: 150...250), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
-            canvas.lineColor = Color.blue
+            canvas.lineColor = Color(hue: Int.random(in: 40...360), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
             
             // set line thickness
             canvas.defaultLineWidth = 3

@@ -10,6 +10,7 @@
 		500B539F256625AC00F2E6A5 /* eyetest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B539E256625AC00F2E6A5 /* eyetest.swift */; };
 		500B53A22566C35300F2E6A5 /* eyetestblue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B53A12566C35300F2E6A5 /* eyetestblue.swift */; };
 		503065D0256D71C9003DCA44 /* Skiddle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503065CF256D71C9003DCA44 /* Skiddle2.swift */; };
+		503065D3256D7A81003DCA44 /* alternate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503065D2256D7A81003DCA44 /* alternate.swift */; };
 		506008272541FB9E00BFACCE /* FiveCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506008262541FB9E00BFACCE /* FiveCircles.swift */; };
 		5082BE28255AF79900BB2FCC /* Spiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BE27255AF79900BB2FCC /* Spiral.swift */; };
 		5082BE2B255AF85700BB2FCC /* IndividualSpiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */; };
@@ -67,6 +68,7 @@
 		500B539E256625AC00F2E6A5 /* eyetest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyetest.swift; sourceTree = "<group>"; };
 		500B53A12566C35300F2E6A5 /* eyetestblue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyetestblue.swift; sourceTree = "<group>"; };
 		503065CF256D71C9003DCA44 /* Skiddle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiddle2.swift; sourceTree = "<group>"; };
+		503065D2256D7A81003DCA44 /* alternate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alternate.swift; sourceTree = "<group>"; };
 		506008262541FB9E00BFACCE /* FiveCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCircles.swift; sourceTree = "<group>"; };
 		5082BE27255AF79900BB2FCC /* Spiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spiral.swift; sourceTree = "<group>"; };
 		5082BE2A255AF85700BB2FCC /* IndividualSpiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSpiral.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				814ADAF4248EAB6A00F80486 /* TurtleSketch.swift */,
 				814ADAFA248EB45F00F80486 /* AudioInputSketch.swift */,
 				814ADAFE248EB5E300F80486 /* StaticSketch.swift */,
+				503065D2256D7A81003DCA44 /* alternate.swift */,
 				814ADAFC248EB56900F80486 /* EmptySketch.swift */,
 				506008262541FB9E00BFACCE /* FiveCircles.swift */,
 				5082BE27255AF79900BB2FCC /* Spiral.swift */,
@@ -511,6 +514,7 @@
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
+				503065D3256D7A81003DCA44 /* alternate.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
 				506008272541FB9E00BFACCE /* FiveCircles.swift in Sources */,
 				503065D0256D71C9003DCA44 /* Skiddle2.swift in Sources */,

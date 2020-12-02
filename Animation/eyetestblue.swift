@@ -101,9 +101,13 @@ class eyetestblue: NSObject, Sketchable {
                     
                     canvas.lineColor = Color(hue: Int.random(in: 0...360), saturation: Int.random(in: 75...100), brightness: 100, alpha: Int.random(in: 50...100))
                     
+                    canvas.drawRectangle(at: Point(x: 380, y: 400), width: 800, height: 400)
+//                    canvas.fillColor = Color.init(hue: 288, saturation: 75, brightness: 79, alpha: 30)
+                    
+                    canvas.drawText(message: "HAPPY BIRTHDAY DAD", at: Point(x: 440, y: 600), size: 60, kerning: 2)
+                    canvas.textColor = Color.red
                     
                     
-                
                 }
             }
         }
